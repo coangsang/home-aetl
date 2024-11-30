@@ -1,0 +1,29 @@
+        /* Khung chứa tổng thể */
+        #qrcode-container {
+            position: relative;
+            display: inline-block;
+            width: 30vw; /* Kích thước khung là 30% chiều rộng màn hình */
+            max-width: 300px;
+            height: auto;
+            aspect-ratio: 1; /* Giữ tỷ lệ khung là 1:1 */
+        }
+
+        /* QR code */
+        #qr-code {
+            position: absolute;
+            top: 50%; /* Đưa tâm QR code đến giữa container */
+            left: 50%;
+            width: 77%; /* QR code chiếm 80% diện tích của khung */
+            height: auto;
+            transform: translate(-50%, -40%); /* Căn giữa tâm */
+        }
+
+        /* Ảnh khung */
+        #qr-border {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 105%; /* Khung chiếm toàn bộ vùng chứa */
+            height: 105%;
+            pointer-events: none; /* Không chặn thao tác quét */
+        }
